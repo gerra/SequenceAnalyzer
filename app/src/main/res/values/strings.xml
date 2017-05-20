@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SequenceAnalyzer</string>
+    
+    <string name="tutorialItsClear">It\'s clear</string>
+    <string name="detectSequenceType">Detect</string>
+    <string name="enterSequenceHint">Enter sequence of integers</string>
+    <string name="arithmetic">Arithmetic</string>
+    <string name="geometric">Geometric</string>
+    <string name="constant">Constant</string>
+    <string name="random">Random</string>
+    <string name="nonsequence">Not a sequence</string>
+    <string name="tutorial1">This application helps you to detect type of integer sequence</string>
+    <string name="tutorial2">There are 4 types of supported sequences: arithmetic, geometric, constant, random</string>
+    <string name="tutorial3">Just enter numbers splitting by commas or spaces in field and click the button</string>
+    <string name="tutorial4">Hope you enjoy this app!</string>
+</resources>
