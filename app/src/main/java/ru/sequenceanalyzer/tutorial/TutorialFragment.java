@@ -51,6 +51,7 @@ public class TutorialFragment extends Fragment {
 
         ImageView tutorialImage = (ImageView) view.findViewById(R.id.tutorialImage);
         if (imageId != 0) {
+            //noinspection deprecation
             tutorialImage.setImageDrawable(getResources().getDrawable(imageId));
         }
 

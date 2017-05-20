@@ -11,17 +11,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 
-public class Utils {
+class Utils {
     private static final String PREFERENCES_NAME = "ru.sequenceanalyzer.PREFERENCES";
     private static final String TUTORIAL_PASSED_KEY = "TUTORIAL_PASSED";
-    private static final String SEQUENCE_KEY = "SEQUENCE_PASSED";
 
-    public static boolean isTutorialPassed(Context context) {
+    static boolean isTutorialPassed(Context context) {
         return context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
                 .getBoolean(TUTORIAL_PASSED_KEY, false);
     }
 
-    public static void setTutorialPassed(Context context) {
+    static void setTutorialPassed(Context context) {
         context.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
                 .edit()
                 .putBoolean(TUTORIAL_PASSED_KEY, true)
@@ -48,10 +47,11 @@ public class Utils {
         }
     }
 
-    public static void saveEnteredSequence(Context context, String sequence) {
+    static void saveEnteredSequence(Context context, String sequence) {
         File file = getConfigFile(context);
         if (!file.exists()) {
             try {
+                //noinspection ResultOfMethodCallIgnored
                 file.createNewFile();
             } catch (IOException ignored) {
             }
@@ -66,7 +66,7 @@ public class Utils {
         }
     }
 
-    public static String loadEnteredSequence(Context context) {
+    static String loadEnteredSequence(Context context) {
         File file = getConfigFile(context);
         if (!file.exists()) {
             return "";

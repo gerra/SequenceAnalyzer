@@ -11,7 +11,6 @@ import android.widget.Button;
 
 import ru.sequenceanalyzer.R;
 
-//@SuppressWarnings("ConstantConditions")
 public class LastTutorialFragment extends TutorialFragment {
 
     public static LastTutorialFragment newInstance(@DrawableRes int imageId, @StringRes int textId) {
@@ -23,6 +22,7 @@ public class LastTutorialFragment extends TutorialFragment {
         return lastTutorialFragment;
     }
 
+    @SuppressWarnings("ConstantConditions")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 
 import java.util.List;
 
-public class AnalyzerModelImpl implements AnalyzerModel {
+class AnalyzerModelImpl implements AnalyzerModel {
 
     private interface TwoNeighborValidator {
         boolean validate(Integer element, Integer next);
